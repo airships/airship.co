@@ -43,6 +43,7 @@
     "coffee-loader": "~0.7",
     "script-loader": "~0.5",
     "sass-loader": "~0.0",
+    "jade-loader": "~0.6",
     "node-sass": "~0.7.0"
   }
 }

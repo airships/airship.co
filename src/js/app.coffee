@@ -1,4 +1,8 @@
+require 'head'
 $ = require 'jquery'
 require 'foundation'
 
-alert("Touch: #{Modernizr.touch}")
+body = require('../foundation.jade')()
+
+$ ->
+  $('body').html(body)

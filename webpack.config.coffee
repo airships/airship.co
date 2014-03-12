@@ -1,8 +1,8 @@
 # See webpack.config.js for more examples:
 # https://github.com/webpack/webpack-with-common-libs/blob/master/webpack.config.js
+# https://github.com/webpack/example-app/blob/master/webpack.config.js
 
 path = require 'path'
-webpack = require 'webpack'
 
 # webpack-dev-server options used in gulpfile
 # https://github.com/webpack/webpack-dev-server
@@ -14,8 +14,7 @@ module.exports =
   cache: true
 
   entry:
-    app: './src/js/app'
-    head: './src/js/head'
+    bundle: './src/js/app'
 
   output:
     path: path.join(__dirname, 'dist')
@@ -30,7 +29,7 @@ module.exports =
         loader: 'coffee-loader'
       }
       {
-        test: /\.scss$/,
+        test: /\.scss$/
         loader: "style-loader!sass-loader?outputStyle=expanded&includePaths[]=./bower_components/foundation/scss/"
       }
       {
@@ -54,6 +53,10 @@ module.exports =
       #   test: /\.svg$/
       #   loader: 'file-loader?prefix=font/'
       # }
+      {
+        test: /\.jade$/
+        loader: 'jade-loader?self'
+      }
     ]
 
   resolve:
