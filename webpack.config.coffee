@@ -2,6 +2,7 @@
 # https://github.com/webpack/webpack-with-common-libs/blob/master/webpack.config.js
 # https://github.com/webpack/example-app/blob/master/webpack.config.js
 
+webpack = require 'webpack'
 path = require 'path'
 
 # webpack-dev-server options used in gulpfile
@@ -19,8 +20,13 @@ module.exports =
   output:
     path: path.join(__dirname, 'dist')
     publicPath: 'dist/'
-    filename: '[name].js'
-    chunkFilename: '[chunkhash].js'
+    filename: '[hash]/bundle.js'
+    sourceMapFilename: '[file].map'
+    chunkFilename: '[hash]/js/[id].js'
+    hotUpdateMainFilename: "[hash]/update.json",
+    hotUpdateChunkFilename: "[hash]/js/[id].update.js"
+
+  recordsOutputPath: path.join(__dirname, "records.json"),
 
   module:
     loaders: [
@@ -59,8 +65,11 @@ module.exports =
       }
     ]
 
+
   resolve:
     extensions: ['', '.webpack.js', '.web.js', '.coffee', '.js', '.scss']
     modulesDirectories: ['src', 'src/js', 'web_modules', 'bower_components', 'node_modules']
 
-  plugins: []
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(true)
+  ]

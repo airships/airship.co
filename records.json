@@ -1,0 +1,31 @@
+{
+  "nextFreeModuleId": 17,
+  "modules": {
+    "byIdentifier": {
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/addScript.js": 1,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/coffee-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/web_modules/jquery.coffee": 2,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/coffee-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/src/js/foundation.coffee": 3,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/coffee-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/src/js/head.coffee": 4,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/jade-loader/index.js?self!/Users/joe/Documents/_projects/airship/dev/airship.co/src/foundation.jade": 5,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/jade/lib/runtime.js": 6,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/sass-loader/index.js?outputStyle=expanded&includePaths[]=./bower_components/foundation/scss/!/Users/joe/Documents/_projects/airship/dev/airship.co/src/styles/app.scss": 7,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/bower_components/foundation/js/foundation/foundation.js": 8,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/bower_components/jquery/dist/jquery.js": 9,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/bower_components/modernizr/modernizr.js": 10,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/node_modules/raw-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/bower_components/foundation/js/foundation/foundation.js": 11,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/node_modules/raw-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/bower_components/jquery/dist/jquery.js": 12,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/script-loader/node_modules/raw-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/bower_components/modernizr/modernizr.js": 13,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/style-loader/addStyle.js": 14,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/style-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/sass-loader/index.js?outputStyle=expanded&includePaths[]=./bower_components/foundation/scss/!/Users/joe/Documents/_projects/airship/dev/airship.co/src/styles/app.scss": 15,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/webpack/node_modules/node-libs-browser/lib/fs.js": 16,
+      "/Users/joe/Documents/_projects/airship/dev/airship.co/node_modules/coffee-loader/index.js!/Users/joe/Documents/_projects/airship/dev/airship.co/src/js/app.coffee": 0
+    }
+  },
+  "nextFreeChunkId": 1,
+  "chunks": {
+    "byName": {
+      "bundle": 0
+    },
+    "byBlocks": {}
+  }
+}
