@@ -12,13 +12,14 @@ webpackConfig = require './webpack.config.coffee'
 gulp.task 'default', ['webpack-dev-server'], ->
 
 
+conf = Object.create webpackConfig
+conf.devtool = 'source-map'
+
+
 ############################################################
 # Development build
 ############################################################
 gulp.task 'webpack-dev-server', (callback) ->
-  # modify some webpack config options
-  conf = Object.create webpackConfig
-  conf.devtool = 'source-map'
   conf.debug = true
 
   # Start a webpack-dev-server
@@ -36,13 +37,11 @@ gulp.task 'webpack-dev-server', (callback) ->
 ############################################################
 gulp.task 'build', ['webpack:build'], ->
 gulp.task 'webpack:build', (callback) ->
-
-  # modify some webpack config options
-  conf = Object.create(webpackConfig)
-  conf.plugins = conf.plugins.concat new webpack.DefinePlugin
-    'process.env':
-      NODE_ENV: JSON.stringify('production')
-  , new webpack.optimize.DedupePlugin(), new webpack.optimize.UglifyJsPlugin()
+  conf.plugins = conf.plugins.concat(
+    new webpack.DefinePlugin 'process.env': { NODE_ENV: JSON.stringify('production') }
+    new webpack.optimize.DedupePlugin()
+    new webpack.optimize.UglifyJsPlugin()
+  )
 
   # run webpack
   webpack conf, (err, stats) ->
