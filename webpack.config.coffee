@@ -20,11 +20,11 @@ module.exports =
   output:
     path: path.join(__dirname, 'dist')
     publicPath: 'dist/'
-    filename: '[hash]/bundle.js'
+    filename: 'bundle.js'
     sourceMapFilename: '[file].map'
-    chunkFilename: '[hash]/js/[id].js'
-    hotUpdateMainFilename: "[hash]/update.json",
-    hotUpdateChunkFilename: "[hash]/js/[id].update.js"
+    # chunkFilename: '[hash]/js/[id].js'
+    # hotUpdateMainFilename: "[hash]/update.json",
+    # hotUpdateChunkFilename: "[hash]/js/[id].update.js"
 
   recordsOutputPath: path.join(__dirname, "records.json"),
 

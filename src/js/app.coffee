@@ -2,7 +2,7 @@ require 'head'
 $ = require 'jquery'
 require 'foundation'
 
-body = require('../foundation.jade')()
+body = require('../home.jade')()
 
 $ ->
   $('body').html(body)

@@ -25,6 +25,11 @@ gulp.task 'webpack-dev-server', (callback) ->
   # Start a webpack-dev-server
   new WebpackDevServer webpack(conf),
     contentBase: conf.contentBase
+    # hot: true
+    quiet: false
+    noInfo: false
+    # lazy: false
+    watchDelay: 300
     stats:
       colors: true
   .listen 8080, 'localhost', (err) ->
